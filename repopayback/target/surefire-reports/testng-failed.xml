@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)" verbose="0">
+    <classes>
+      <class name="ppack.LoginTest">
+        <methods>
+          <include name="LoginWithValidCredential"/>
+          <include name="loginWithInvalidCredential"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ppack.LoginTest -->
+      <class name="ppack.SignUpButtonTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="openPaybackApplication"/>
+        </methods>
+      </class> <!-- ppack.SignUpButtonTest -->
+      <class name="ppack.ForgotPinTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="usingValidPhoneNumber"/>
+        </methods>
+      </class> <!-- ppack.ForgotPinTest -->
+      <class name="ppack.SignUpTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="signUpWithoutSelectingSalutation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ppack.SignUpTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

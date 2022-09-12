@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+    <listener class-name="listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="ppack.SignUpButtonTest"/>
+      <class name="ppack.SignUpTest"/>
+      <class name="ppack.LoginTest"/>
+      <class name="ppack.ForgotPinTest"/>
+    </classes>
+  </test> <!-- Test1 -->
+</suite> <!-- Suite -->
